@@ -128,6 +128,21 @@
         padding: 3rem;
     }
 
+    .hero-titles h1{
+        color: var(--background-color-1);
+        font-weight: bolder;
+        font-size: 50px;
+        margin-top: 10px;
+     }
+
+     .hero-items p{
+        background-color: rgba(22, 22, 22, 0.6) ;
+        color: var(--backgroud-color-1);
+        color: var(--font-color-1);
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
     .box-card{
         margin-top: 2rem;
         width: 80%;

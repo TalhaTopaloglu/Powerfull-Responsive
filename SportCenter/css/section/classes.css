@@ -87,12 +87,17 @@ background: linear-gradient(77deg, rgba(255, 255, 255, 1) 50%, rgba(245, 245, 24
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: 5rem;
+        gap: 1rem;
         padding: 2rem;
     }
 
     .classes-button{
         width: 40%;
+        padding: 5px 10px;
+    }
+
+    .class-img img {
+        width: 0;
     }
 
     .active::after{
