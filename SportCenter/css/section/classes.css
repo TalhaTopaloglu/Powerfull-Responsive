@@ -97,7 +97,7 @@ background: linear-gradient(77deg, rgba(255, 255, 255, 1) 50%, rgba(245, 245, 24
     }
 
     .class-img img {
-        width: 0;
+        width: 100%;
     }
 
     .active::after{
