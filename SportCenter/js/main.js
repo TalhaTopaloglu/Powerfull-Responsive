@@ -12,6 +12,11 @@ menuBtnDOM.addEventListener('click', () => {
 
 if(window.innerWidth <= 576){
     navbarItemsDOM.classList.add('menu-display-none')
+    window.addEventListener('click' ,(e) => {
+        if(e.target.classList.contains('close-menu')){
+            navbarItemsDOM.classList.add('menu-display-none')
+        }
+    } )
 }
 
 //HeaderDOM
