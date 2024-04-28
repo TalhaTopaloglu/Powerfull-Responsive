@@ -1,0 +1,31 @@
+#footer {
+    background-color: #36528F;
+}
+
+.footer-info{
+    color: var(--font-color-1);
+    font-weight: 500;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--font-color-1);
+    margin-top: 2rem;
+    
+}
+
+.footer-content ul{
+    padding: 0;
+}
+
+.footer-content li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footer-content li a{
+    text-decoration: none;
+    color: var(--font-color-1);
+}

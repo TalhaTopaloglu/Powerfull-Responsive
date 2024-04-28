@@ -1,0 +1,121 @@
+#header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s linear;
+    z-index: 1;
+}
+
+#header .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.menu-btn{
+    display: none;
+}
+
+.navbar-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item{
+    list-style-type: none;
+}
+
+.navbar-item a {
+    margin: 1rem;
+    color: var(--font-color-1);
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.navbar-item a:hover {
+    margin: 1rem;
+    color: var(--font-color-2);
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.joinBtn{
+    background-color:#F79B08;
+    color: var(--font-color-1);
+    font-weight: 700;
+    border-radius: 5%;
+    border: none;
+}
+
+@media (max-width:576px) {
+
+    #header {
+        background-color: transparent;
+        position: fixed;
+        width: 100%;
+        transition: 0.5s linear;
+        z-index: 1;
+    }
+
+    .menu-btn{
+        display: flex;
+        background-color: var(--background-color-3);
+        border-radius: 1rem;
+        border: 2px solid rgb(255, 255, 255);
+        background-color: inherit;
+        font-size: 1.6rem;
+        color: var(--font-color-1);
+        font-weight: 900;
+        padding: 0.5rem;
+        transition: 0.2s linear;
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-items{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 73px;
+        align-items: center;
+        transition: 0.5s linear;
+        padding: 3rem;
+        z-index: 5;
+        animation: slideIn 0.5s ease-in-out;
+    }
+
+    .menu-display-none{
+        display: none;
+    }
+
+    .navbar-items li{
+        margin: 0.5rem 0;
+    }
+}
+

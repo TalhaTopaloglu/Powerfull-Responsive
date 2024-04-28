@@ -1,0 +1,150 @@
+#hero .bg-image{
+    display: flex;
+    background-image:url(/SportCenter/img/hero-man.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#hero .hero-items{
+    margin-top: 10rem;
+}
+
+.hero-items h4{
+    padding: 5px 15px;
+    background-color: var(--background-color-3);
+    color: var(--font-color-1);
+    border-radius: 10px;
+    font-weight: 600;
+    text-shadow: 1px 2px 5px #000000;
+    display: inline;
+        
+}
+
+.hero-titles h1{
+    color: var(--background-color-1);
+    font-weight: bolder;
+    font-size: 90px;
+    margin-top: 10px;
+ }
+
+.hero-items p{
+    background-color: rgba(22, 22, 22, 0.6) ;
+    color: var(--backgroud-color-1);
+    color: var(--font-color-1);
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+
+.hero-buttons{
+    margin: 10px 0 40px 0;
+}
+
+#signUp{
+    margin-right: 30px;
+    background-color: var(--background-color-3);
+    color: var(--font-color-1);
+    padding: 5px 15px;
+    font-weight: 700;
+    border: none;
+    border-radius:5px;
+    font-size: large;
+    transition: 0.4s;
+}
+
+#signUp:hover{
+    background-color: var(--background-color-4);
+    border: 1px solid #FFFFFF;
+    color: var(--font-color-1);
+}
+
+#details{
+    background-color: rgba(22, 22, 22, 0.3) ;
+    border: 1px solid #FFFFFF;
+    color: var(--font-color-1);
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+#details:hover{
+    background-color: var(--background-color-4);
+    border: 1px solid #000000;
+    color: var(--font-color-1);
+}
+
+.hero-info{
+    display: flex;
+    background-color: #F1F8FF;
+    flex-wrap: wrap;
+}
+
+.info-items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 4% 0;
+}
+
+.box-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 22%;
+    padding: 1rem 0;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.box-card h3{
+    font-weight: 800;
+    color: #36528F;
+    margin-bottom: 25px;
+}
+
+.box-card h4{
+    font-weight: 800;
+}
+
+@media screen and (max-width: 576px) {
+    
+   .hero-buttons{
+    display:flex ;
+    flex-direction: column ;
+    width: 100%;
+   }
+
+   .info-items{
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 4%;
+        padding: 3rem;
+    }
+
+    .box-card{
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+   #signUp{
+    margin-right: 0;
+    margin-bottom: 1rem;
+    }
+
+    .hero-items {
+        text-align: left;
+        padding: 2rem;
+    }
+
+    .hero-items p{
+        text-align: left;
+    }
+
+  }

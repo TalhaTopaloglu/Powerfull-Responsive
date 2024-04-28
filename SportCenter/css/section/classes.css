@@ -1,0 +1,116 @@
+#classes{
+background: linear-gradient(77deg, rgba(255, 255, 255, 1) 50%, rgba(245, 245, 245, 1) 40%);
+}
+
+.classes-buttons{
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.classes-button{
+    background-color: var(--background-color-3);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 25px; 
+    color: var(--font-color-1);
+    border-radius: 5px;
+}
+
+.classes-info{
+    display: flex;
+    flex-direction: row;
+    gap:5rem;
+    padding: 0 5rem;
+}
+
+.class-img img {
+    width: 50vh;
+}
+
+.class-info{
+    color: rgb(71, 71, 71);
+}
+
+.class-info h4{
+    font-weight: 700;
+    color: rgb(71, 71, 71);
+
+}
+
+.class-info p{
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+
+}
+
+.class-info ul{
+    margin-bottom: 1rem;
+    margin: 0;
+    padding: 0;
+    color: rgb(71, 71, 71);
+
+}
+
+/* button aktifken  */
+.active{
+    position:relative;
+    background-color:var(--background-color-4);
+    box-shadow: rgba(241, 147, 24, 0.9) 0px 5px 15px 0px;    
+}
+
+.active::after{
+    content: "ok";
+    position: absolute;
+    background-color:var(--background-color-4);
+    color:var(--background-color-4);
+    top: 99%;
+    left: 38%;
+    clip-path: polygon(50% 40%, 0 0, 100% 0);    
+}
+
+.class-info ul li{
+    margin-bottom: 1rem;
+    list-style: none;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .classes-buttons{
+        margin-top: 4rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 5rem;
+        padding: 2rem;
+    }
+
+    .classes-button{
+        width: 40%;
+    }
+
+    .active::after{
+        left: 45%;  
+    }
+
+    .classes-info{
+        display: flex;
+        flex-direction: column;    
+        gap:0;
+        padding: 0;
+       
+    }
+    .class-info{
+        padding: 2rem;
+    }
+
+    
+}
+
+

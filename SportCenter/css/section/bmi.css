@@ -1,0 +1,96 @@
+#bmi{
+    background-color: var(--background-color-2);
+    margin: 4rem 0;
+}
+
+.bmi{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.calculator{
+    width: 50%;
+}
+
+.calculator h1{
+    color: var(--background-color-3);
+    font-weight: 700;
+}
+
+.calculator p{
+    color: rgb(71, 71, 71);
+    font-weight: 700;
+}
+
+.calculator .inputs{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.inputs input{
+    width: 30vh;
+    margin-top:0.5rem;
+    margin-right:0.5rem;
+}
+
+.bmi-img{
+    position: relative;
+}
+
+.bmi-triangel{
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    left: 79%;
+    transform: translate(-50% -50%);
+    background-color: var(--background-color-3);
+    clip-path: polygon(50% 35%, 0 100%, 100% 100%);
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+    .bmi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 4rem 0;
+    }
+
+    .calculator{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .calculator h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    .calculator p{
+        text-align: left;
+        width: 100%;
+    }
+
+    .bmi-img img{
+        width:100% ;
+    }
+    
+    .calculator .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #weigth{
+        margin-left: 0;
+    }
+  }
+
+
