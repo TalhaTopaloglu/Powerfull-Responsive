@@ -1,6 +1,6 @@
 #hero .bg-image{
     display: flex;
-    background-image:url(/PowerFull/SportCenter/img/hero-man.jpg);
+    background-image:url(/img/hero-man.jpg);
     background-size: cover;
     background-position-y: 40%;
     background-repeat: no-repeat;
